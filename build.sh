@@ -10,7 +10,7 @@ node-waf -vv
 
 if [ -f build/default/o3.node ]
 then
-    cp build/default/o3.node ../../node_modules/libxml
+    cp build/default/o3.node ../../lib/libxml
 else
-    cp build/Release/o3.node ../../node_modules/libxml
+    cp build/Release/o3.node ../../lib/libxml
 fi

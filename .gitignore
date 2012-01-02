@@ -1,4 +1,4 @@
 .DS_Store
 libxml*.tgz
 package/
-node_modules/libxml/o3.node
+lib/libxml/o3.node
