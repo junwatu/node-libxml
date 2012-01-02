@@ -1,6 +1,6 @@
 {
   "name" : "libxml",
-  "version" : "0.0.2",
+  "version" : "0.0.3",
   "description" : "libxml2 wrapper for node.js",
   "author": "ajax.org B.V. <info@ajax.org>",
   "contributors": [
@@ -13,7 +13,7 @@
   },
   "devDependencies": {
   },
-  "main": "./lib/libxml",
+  "main": "./node_modules/libxml",
   "scripts" : {
     "preinstall" : "./build.sh",
     "test": "node ./test.js"

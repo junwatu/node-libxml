@@ -8,4 +8,9 @@ node tools/gluegen.js
 node-waf -vv configure
 node-waf -vv
 
-cp build/default/o3.node ../../lib/libxml
+if [ -f build/default/o3.node ]
+then
+    cp build/default/o3.node ../../node_modules/libxml
+else
+    cp build/Release/o3.node ../../node_modules/libxml
+fi
