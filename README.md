@@ -36,6 +36,12 @@ var xpathNodeList = elem.selectNodes("descendant-or-self::node()[@available='tru
 console.log("first element of the xpath querry: " + xpathNodeList[0].getAttribute("id"));
 ```
 
+Continuous Integration status
+-----------------------------
+
+This project is tested with [Travis CI](http://travis-ci.org)
+[![Build Status](https://secure.travis-ci.org/ajaxorg/node-libxml.png)](http://travis-ci.org/ajaxorg/node-libxml)
+
 Contributing
 ------------
 
