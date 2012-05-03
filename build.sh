@@ -1,5 +1,7 @@
 #!/bin/sh
 
+git submodule update --init --recursive
+
 cd `dirname $0`
 cd support/o3
 
