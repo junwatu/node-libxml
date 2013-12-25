@@ -5,8 +5,8 @@ cd support/o3
 
 rm -rf build/ || true
 node tools/gluegen.js
-node-waf -vv configure
-node-waf -vv
+node-gyp -vv configure
+node-gyp -vv
 
 if [ -f build/default/o3.node ]
 then
