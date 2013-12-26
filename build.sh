@@ -1,12 +1,19 @@
 #!/bin/sh
 
 cd `dirname $0`
+
+git submodule init
+git submodule update
+
 cd support/o3
 
 rm -rf build/ || true
+
+git checkout master
+
 node tools/gluegen.js
-node-gyp -vv configure
-node-gyp -vv
+node-gyp configure
+node-gyp build
 
 if [ -f build/default/o3.node ]
 then
