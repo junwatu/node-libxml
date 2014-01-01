@@ -1,11 +1,11 @@
 #!/bin/sh
 
-cd `dirname $0`
-
 git submodule init
 git submodule update
 
-cd node_modules/libxml/support/o3
+cd `dirname $0`
+
+cd support/o3
 
 rm -rf build/ || true
 
