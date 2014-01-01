@@ -5,7 +5,7 @@ cd `dirname $0`
 git submodule init
 git submodule update
 
-cd support/o3
+cd node_modules/libxml/support/o3
 
 rm -rf build/ || true
 
